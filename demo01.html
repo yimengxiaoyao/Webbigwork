@@ -194,8 +194,7 @@
 	</div>
 	<div class="tan3" id="tan3">
 		<img src="img/app.png" class="tan3-2">
-		<img src="img/serwei.png" class="tan3-1">
-		<img src="img/erwei.png" class="tan3-3">
+		<img src="img/serwei.png" class="tan3-1" id="tan3-1">
 	</div>
 	<div class="tan4" id="tan4"><img src="img/cart.png"></div>
 
@@ -305,7 +304,7 @@
 
 
 	function jump(){
-  	window.open(name="https://yimengxiaoyao.github.io/Webbigwork/demo02.html");
+  	window.open(name="https://yimengxiaoyao.github.io/Webbigwork/demo02.html","_self");
    }
 
 
@@ -513,12 +512,18 @@
   }
 
   var tan3=document.getElementById("tan3");
+  var tan31=document.getElementById("tan3-1");
  
   tan3.onmouseover=function(){
   	tan3.setAttribute("style","right: 0");
+  	tan31.setAttribute("class","tan3-3");
+  	tan31.setAttribute("src","img/erwei.png");
+
   }
   tan3.onmouseout=function(){
-  	tan3.setAttribute("style","right: -99px");
+  	tan3.setAttribute("style","right: -92px");
+  	tan31.setAttribute("class","tan3-1");
+  	tan31.setAttribute("src","img/serwei.png");
   }
 
 </script>

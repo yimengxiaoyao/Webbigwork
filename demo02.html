@@ -290,19 +290,19 @@
 		img1.onmousemove = function (ev) {
 			var ev = ev || window.event;
 
-			var TOP=document.body.scrollTop||document.documentElement.scrollTop;//滚动条的距离
+			var TOP=document.body.scrollTop||document.documentElement.scrollTop;
 
-			var oL = ev.clientX - box.offsetLeft - slider.offsetWidth / 2;   //鼠标的水平位置减去大盒子距离浏览器左边的距离减去那个黑色透明盒子的宽度的一半就是鼠标相对于第一个图片的左边实际距离
-			var oT = ev.clientY+TOP - box.offsetTop - slider.offsetHeight / 2; //同上这个是上边的距离
+			var oL = ev.clientX - box.offsetLeft - slider.offsetWidth / 2; 
+			var oT = ev.clientY+TOP - box.offsetTop - slider.offsetHeight / 2; 
 
-			var oMaxw = img1.offsetWidth - slider.offsetWidth; //第一个图片的实际宽度
-			var oMaxh = img1.offsetHeight - slider.offsetHeight;//第一个图片的实际高度
+			var oMaxw = img1.offsetWidth - slider.offsetWidth;
+			var oMaxh = img1.offsetHeight - slider.offsetHeight;
 
-			oL = oL > oMaxw ? oMaxw : oL < 0 ? 0 : oL;//如果ol的值大于这个图片的实际宽度则就是等于图片的宽度，否则当左边距小于零就返回0大于零就等于左边距ol它本身
-			oT = oT > oMaxh ? oMaxh : oT < 0 ? 0 : oT;//同上
+			oL = oL > oMaxw ? oMaxw : oL < 0 ? 0 : oL;
+			oT = oT > oMaxh ? oMaxh : oT < 0 ? 0 : oT;
 
-			slider.style.left = oL + 'px';//slider 的left值
-			slider.style.top = oT + 'px';//slider 的top值
+			slider.style.left = oL + 'px';
+			slider.style.top = oT + 'px';
 
 			var scale = img2.offsetWidth / slider.offsetWidth;
 			Bimg.style.left = -scale * oL +110+ 'px'

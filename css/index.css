@@ -874,7 +874,8 @@ ul li{
 	position: fixed;
 	top:30px;
 	right: -80px;
-	overflow: hidden;	
+	overflow: hidden;
+	z-index: 1000;	
 }
 .tan1-1{
 	width:123px;
@@ -929,13 +930,13 @@ ul li{
 }
 
 .tan3{
-	width:142px;
+	width:135px;
 	height:153px;
 	float: left; 
 	position: fixed;
 	top:288px;
 	right:0;
-	right: -99px;
+	right: -92px;
 	overflow: hidden;
 	background-color: #ff9260;
 }
@@ -955,7 +956,7 @@ ul li{
 	width:90px;
 	height:90px;
 	margin-top: 5px;
-	margin-left: 10px;
+	margin-left: 30px;
 	float: left; 
 }
 
